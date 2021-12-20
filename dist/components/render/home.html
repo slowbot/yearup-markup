@@ -1,300 +1,303 @@
 
 
-<header class="relative py-3 md:py-6 bg-white">
-    <div class="container">
-        <nav class="relative flex items-center justify-between">
-            <a href="#" class="flex items-center hover:opacity-75 transition duration-150 ease-in-out">
-                <img class="h-8 sm:h-10 w-auto mr-4" src="../../fractal.svg" alt="">
-                <span class="text-xl md:text-2xl font-bold">Fractal</span>
-            </a>
+<div class="relative bg-white shadow">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6">
+    <div class="flex justify-between items-center py-6 md:justify-start md:space-x-10">
+      
+      <!-- Logo -->
+      <div class="flex justify-start lg:w-0 lg:flex-1">
+        <a class="flex items-center" href="#">
+          <span class="pr-4 text-2xl font-semibold">Product Name</span>
+          <span class="text-xs">powered by</span>
+          <img class="w-auto" src="/pictures/yu-logo.png" alt="">
+        </a>
+      </div>
+      
+      <div class="-mr-2 -my-2 md:hidden">
+        <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500" aria-expanded="false">
+          <span class="sr-only">Open menu</span>
+          <!-- Heroicon name: outline/menu -->
+          <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+          </svg>
+        </button>
+      </div>
 
-            <div class="-mr-2 flex items-center sm:hidden">
-                <button type="button" class="inline-flex items-center justify-center p-2 rounded-md text-gray-700 hover:text-gray-900 hover:bg-gray-100 focus:outline-none focus:bg-gray-100 focus:text-gray-500 transition duration-150 ease-in-out" aria-label="Main menu">
-                    <svg class="h-6 w-6" stroke="currentColor" fill="none" viewBox="0 0 24 24">
-                        <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
-                    </svg>
-                </button>
-            </div>
-
-            <div class="hidden sm:flex sm:space-x-10">
-                
-                    <a href="" class="font-bold text-lg text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out">About</a>
-                
-                    <a href="" class="font-bold text-lg text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out">GitHub</a>
-                
-                    <a href="" class="font-bold text-lg text-gray-700 hover:text-gray-900 transition duration-150 ease-in-out">Chat</a>
-                
-            </div>
+      <!-- Nav -->
+      <div class="hidden md:flex">
+        <nav class="hidden md:flex space-x-10 items-center">
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            About
+          </a>
+          <a href="#" class="text-base font-medium text-gray-500 hover:text-gray-900">
+            Resources
+          </a>
         </nav>
+      
+        <div class="hidden md:flex items-center justify-end md:flex-1">
+          <a href="#" class="ml-8 whitespace-nowrap inline-flex items-center justify-center px-4 py-2 border border-transparent rounded-md shadow-sm text-base font-medium text-white bg-blue-400 hover:bg-blue-500">
+            Sign up
+          </a>
+        </div>
+      </div>
     </div>
-</header>
 
+      <!--
+        Mobile menu, show/hide based on mobile menu state.
+
+        Entering: "duration-200 ease-out"
+          From: "opacity-0 scale-95"
+          To: "opacity-100 scale-100"
+        Leaving: "duration-100 ease-in"
+          From: "opacity-100 scale-100"
+          To: "opacity-0 scale-95"
+      -->
+      <div class="absolute top-0 inset-x-0 z-10 p-2 transition transform origin-top-right md:hidden">
+        <div class="rounded-lg shadow-lg ring-1 ring-black ring-opacity-5 bg-white divide-y-2 divide-gray-50">
+          <div class="pt-5 pb-6 px-5">
+            <div class="flex items-center justify-between">
+              <div>
+                <img class="h-8 w-auto" src="https://tailwindui.com/img/logos/workflow-mark-indigo-600.svg" alt="Workflow">
+              </div>
+              <div class="-mr-2">
+                <button type="button" class="bg-white rounded-md p-2 inline-flex items-center justify-center text-gray-400 hover:text-gray-500 hover:bg-gray-100 focus:outline-none focus:ring-2 focus:ring-inset focus:ring-indigo-500">
+                  <span class="sr-only">Close menu</span>
+                  <!-- Heroicon name: outline/x -->
+                  <svg class="h-6 w-6" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12" />
+                  </svg>
+                </button>
+              </div>
+            </div>
+            <div class="mt-6">
+              <nav class="grid gap-y-8">
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    About
+                  </span>
+                </a>
+
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Resources
+                  </span>
+                </a>
+
+                <a href="#" class="-m-3 p-3 flex items-center rounded-md hover:bg-gray-50">
+                  <span class="ml-3 text-base font-medium text-gray-900">
+                    Sign Up
+                  </span>
+                </a>
+
+              </nav>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
 
 <main>
     
-    <section class="bg-pink-200">
-    <div class="grid md:grid-cols-2 items-center">
-        
-            <img src="../../pictures/bubbles.jpg" alt="" loading="lazy" class="image w-full h-64 md:h-full md:w-auto object-cover" />
+    <div class="lg:relative bg-lightblue-200">
+  <div class="mx-auto max-w-7xl w-full pt-16 pb-20 text-center  lg:py-48 lg:text-left">
+    <div class="px-4 lg:w-1/2 sm:px-4 xl:pr-8">
+      <h1 class="text-4xl leading-tight font-semibold text-gray-900 sm:text-5xl md:text-6xl lg:text-5xl xl:text-6xl">
+        <span class="block xl:inline">Join the</span>
+        <span class="block text-blue-500 xl:inline">Talent Provider</span>
+        <span class="block xl:inline">Community</span>
+      </h1>
+      <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+        Share resources and connect with other organizations for partnership and collaboration opportunities.
+      </p>
 
-        
-
-        <div class="py-6 sm:py-10 md:py-12 lg:py-20 xl:py-24">
-            <div class="container md:max-w-xl md:px-10 lg:px-12">
-                <h1 class="text-4xl tracking-tight leading-10 font-extrabold sm:leading-none lg:text-5xl xl:text-6xl">
-                    A tool to <span class="text-pink-600">empower your components</span> library.
-                </h1>
-                
-                    <p class="mt-3 text-lg sm:text-xl md:mt-5 md:max-w-3xl text-pink-500">
-                        Lorem ipsum dolor sit amet consectetur adipisicing elit. In, qui, possimus natus autem a minus quaerat voluptate laboriosam, aut harum esse deserunt.
-                    </p>
-                
-                
-                    <div class="mt-6 flex flex-wrap gap-y-4 gap-x-6">
-                        
-                            <div class="flex-1 whitespace-nowrap">
-                                <a href="#"
-    class="inline-block
-    px-8 py-3 font-medium text-center rounded-lg shadow hover:shadow-md transform hover:-translate-y-1 transition-all duration-200 transition-ease-outblock w-full text-white bg-pink-600 hover:bg-pink-500">
-    Get started
-</a>
-
-                            </div>
-                        
-                        
-                            <div class="flex-1 whitespace-nowrap">
-                                <a href="#"
-    class="inline-block
-    px-8 py-3 font-medium text-center rounded-lg shadow hover:shadow-md transform hover:-translate-y-1 transition-all duration-200 transition-ease-outblock w-full text-pink-600 hover:text-pink-500 bg-white">
-    Learn more
-</a>
-
-                            </div>
-                        
-                    </div>
-                
-            </div>
+      <p class="mt-3 max-w-md mx-auto text-lg text-gray-500 sm:text-xl md:mt-5 md:max-w-3xl">
+        Fill out our 5 minute profiling survey to access your customized resources.
+      </p>
+      <div class="mt-10 sm:flex sm:justify-center lg:justify-start">
+        <div class="rounded-md shadow">
+          <a href="#" class="w-full flex items-center justify-center px-8 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-500 md:py-4 md:text-lg md:px-10">
+            Get started
+          </a>
         </div>
+      </div>
     </div>
-</section>
+  </div>
+  <div class="relative w-full h-64 sm:h-72 md:h-96 lg:absolute lg:inset-y-0 lg:right-0 lg:w-1/2 lg:h-full">
+    <img class="absolute inset-0 w-full h-full object-cover" src="https://images.unsplash.com/photo-1520333789090-1afc82db536a?ixlib=rb-1.2.1&ixid=eyJhcHBfaWQiOjEyMDd9&auto=format&fit=crop&w=2102&q=80" alt="">
+  </div>
+</div>
 
-    <section class="section py-6 md:py-8 lg:py-10 xl:py-20">
-    <div class="container">
-        
-    <header class="max-w-3xl mx-auto sm:text-center">
-        <h2 class="text-2xl sm:text-3xl lg:text-4xl leading-9 font-bold mb-3">Key features</h2>
-        <p class="text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio placeat quisquam minus rem omnis, aliquam consequatur at deleniti, laudantium fugiat ratione? Minima voluptatem, aliquam quod dolorem necessitatibus, blanditiis, itaque deleniti.</p>
-    </header>
 
+    <div class="relative bg-white py-8 sm:py-12 lg:py-16">
+  <div class="mx-auto max-w-md px-4 sm:max-w-3xl sm:px-6 lg:px-8 lg:max-w-7xl">
     
-        <div class="mt-6 md:mt-8 lg:mt-10">
-            <div class="space-y-8 sm:space-y-0 sm:grid sm:grid-cols-2 lg:grid-cols-3 sm:gap-8 md:gap-10 lg:gap-12"><div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#globe" />
-</svg>
+    <div class="text-center">
+      <h2 class="text-base font-semibold tracking-wider text-blue-500 uppercase">Ways to Join</h2>
+      <p class="mt-2 text-3xl font-semibold text-gray-900 tracking-tight sm:text-4xl">
+        Who we serve
+      </p>
+      <p class="mt-5 max-w-prose mx-auto text-xl text-gray-500">
+        Phasellus lorem quam molestie id quisque diam aenean nulla in. Accumsan in quis quis nunc, ullamcorper malesuada. Eleifend condimentum id viverra nulla.
+      </p>
+    </div>
 
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Competitive</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam suscipit culpa sit vero eius voluptate? Repellendus fugit beatae eveniet!</p>
-</div>
-<div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#key" />
-</svg>
-
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Accessible</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus reprehenderit fuga. Eligendi provident ipsa dolor, consequatur soluta obcaecati? Error!</p>
-</div>
-<div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#user" />
-</svg>
-
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Personnal</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi cumque odio perspiciatis soluta iste voluptatem eveniet magni assumenda distinctio.</p>
-</div>
-<div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#gift" />
-</svg>
-
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Approachable</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem quisquam suscipit culpa sit vero eius voluptate? Repellendus fugit beatae eveniet!</p>
-</div>
-<div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#bulb" />
-</svg>
-
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Original</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Repellendus doloribus reprehenderit fuga. Eligendi provident ipsa dolor, consequatur soluta obcaecati? Error!</p>
-</div>
-<div class="feature">
-    <svg class="inline-block align-middle -mt-1 stroke-current w-12 h-12 mb-2 text-teal-500" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#lightning" />
-</svg>
-
-    <h4 class="text-lg md:text-xl lg:text-2xl font-medium mb-2">Fast</h4>
-    <p class="text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Expedita sequi cumque odio perspiciatis soluta iste voluptatem eveniet magni assumenda distinctio.</p>
-</div>
-</div>
-
+    <!-- Card Grid -->
+    <div class="mt-12">
+      <div class="grid grid-cols-1 gap-8 sm:grid-cols-2 lg:grid-cols-3">
+        
+        <!-- Card 1 -->
+        <div class="pt-6">
+          <div class="flow-root pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-gold-400 rounded-md shadow-lg">
+                  <!-- Heroicon name: outline/cloud-upload -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M7 16a4 4 0 01-.88-7.903A5 5 0 1115.9 6L16 6a5 5 0 011 9.9M15 13l-3-3m0 0l-3 3m3-3v12" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Workforce Organizations</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
+            </div>
+          </div>
         </div>
-    
 
-    
-        <div class="mt-6 md:mt-8 lg:mt-10 sm:text-center">
-            <button type="button"
-    class="inline-block
-    px-8 py-3 font-medium text-center rounded-lg shadow hover:shadow-md transform hover:-translate-y-1 transition-all duration-200 transition-ease-outw-full sm:w-auto text-white bg-pink-600 hover:bg-pink-500">
-    Take the tour
-</button>
-
+        <!-- Card 2 -->
+        <div class="pt-6">
+          <div class="flow-root pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-gold-400 rounded-md shadow-lg">
+                  <!-- Heroicon name: outline/lock-closed -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M12 15v2m-6 4h12a2 2 0 002-2v-6a2 2 0 00-2-2H6a2 2 0 00-2 2v6a2 2 0 002 2zm10-10V7a4 4 0 00-8 0v4h8z" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Non Profits</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
+            </div>
+          </div>
         </div>
-    
 
-    </div>
-</section>
-
-    <section class="section py-6 md:py-8 lg:py-10 xl:py-20 bg-white">
-    <div class="container">
-        
-    <div class="flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-8 lg:gap-x-12 items-center">
-        
-            <div class="flex-shrink-0 md:w-2/5 lg:w-1/2 md:order-2">
-                <img src="../../illustrations/scrum-board.svg" alt="" loading="lazy" class="image w-full" width="822" height="580" />
-
+        <!-- Card 3 -->
+        <div class="pt-6">
+          <div class="flow-root pb-8">
+            <div class="-mt-6">
+              <div>
+                <span class="inline-flex items-center justify-center p-3 bg-gold-400 rounded-md shadow-lg">
+                  <!-- Heroicon name: outline/refresh -->
+                  <svg class="h-6 w-6 text-white" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" aria-hidden="true">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 4v5h.582m15.356 2A8.001 8.001 0 004.582 9m0 0H9m11 11v-5h-.581m0 0a8.003 8.003 0 01-15.357-2m15.357 2H15" />
+                  </svg>
+                </span>
+              </div>
+              <h3 class="mt-8 text-lg font-medium text-gray-900 tracking-tight">Community Based Organizations</h3>
+              <p class="mt-5 text-base text-gray-500">
+                Ac tincidunt sapien vehicula erat auctor pellentesque rhoncus. Et magna sit morbi lobortis.
+              </p>
             </div>
-        
-
-        <div class="md:max-w-md mx-auto">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl leading-9 font-bold mb-3 lg:mb-6">Roadmap</h2>
-            <p class="lg:text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio placeat quisquam minus rem omnis, aliquam consequatur at deleniti, laudantium fugiat ratione? Minima voluptatem, aliquam quod dolorem necessitatibus, blanditiis, itaque deleniti.</p>
-
-            
-                <div class="mt-4 lg:mt-6">
-                    <a href="#"
-    class="inline-block
-    text-pink-600 hover:text-pink-500 focus:text-pink-500 font-bold uppercase tracking-wide transition-all duration-200 ease-out group">
-    Read more<svg class="inline-block align-middle -mt-1 stroke-current w-4 h-4 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#chevron-right" />
-</svg>
-
-</a>
-
-                </div>
-            
+          </div>
         </div>
+
+      </div>
     </div>
 
-    </div>
-</section>
-
-    <section class="section py-6 md:py-8 lg:py-10 xl:py-20 bg-white border-t border-gray-200">
-    <div class="container">
-        
-    <div class="flex flex-col md:flex-row gap-y-6 md:gap-y-0 md:gap-x-8 lg:gap-x-12 items-center">
-        
-            <div class="flex-shrink-0 md:w-2/5 lg:w-1/2">
-                <img src="../../illustrations/work.svg" alt="" loading="lazy" class="image w-full" width="741" height="474" />
-
-            </div>
-        
-
-        <div class="md:max-w-md mx-auto">
-            <h2 class="text-2xl sm:text-3xl lg:text-4xl leading-9 font-bold mb-3 lg:mb-6">Tailored for your project</h2>
-            <p class="lg:text-lg text-gray-600">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio placeat quisquam minus rem omnis, aliquam consequatur at deleniti, laudantium fugiat ratione? Minima voluptatem, aliquam quod dolorem necessitatibus, blanditiis, itaque deleniti.</p>
-
-            
-                <div class="mt-4 lg:mt-6">
-                    <a href="#"
-    class="inline-block
-    text-pink-600 hover:text-pink-500 focus:text-pink-500 font-bold uppercase tracking-wide transition-all duration-200 ease-out group">
-    Read more<svg class="inline-block align-middle -mt-1 stroke-current w-4 h-4 ml-2 transition-all duration-200 ease-out transform group-hover:translate-x-1" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#chevron-right" />
-</svg>
-
-</a>
-
-                </div>
-            
+  </div>
+</div>
+    <div class="relative py-16 bg-white">
+  <div class="hidden absolute top-0 inset-x-0 h-1/2 lg:block" aria-hidden="true"></div>
+  <div class="max-w-7xl mx-auto bg-indigo-600 lg:bg-transparent lg:px-8">
+    <div class="lg:grid lg:grid-cols-12">
+      <div class="relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent">
+        <div class="lg:max-w-3xl lg:max-w-md lg:mx-auto lg:px-6">
+          <div class="flex align-center justify-center aspect-w-10 aspect-h-6 lg:rounded-3xl shadow-2xl bg-gold-400 py-12 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1">
+            <img class="object-cover object-center" src="/pictures/map.png" alt="">
+          </div>
         </div>
+      </div>
+
+      <div class="relative bg-blue-500 lg:col-start-3 lg:row-start-1 lg:col-span-10 lg:rounded-3xl lg:grid lg:grid-cols-10 lg:items-center">
+
+        <!-- Callout Image -->
+        <div class="hidden absolute inset-0 overflow-hidden rounded-3xl lg:block" aria-hidden="true">
+          <svg class="absolute bottom-full left-full transform translate-y-1/3 -translate-x-2/3 xl:bottom-auto xl:top-0 xl:translate-y-0" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gold-500" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+          </svg>
+          <svg class="absolute top-full transform -translate-y-1/3 -translate-x-1/3 xl:-translate-y-1/2" width="404" height="384" fill="none" viewBox="0 0 404 384" aria-hidden="true">
+            <defs>
+              <pattern id="64e643ad-2176-4f86-b3d7-f2c5da3b6a6d" x="0" y="0" width="20" height="20" patternUnits="userSpaceOnUse">
+                <rect x="0" y="0" width="4" height="4" class="text-gold-500" fill="currentColor" />
+              </pattern>
+            </defs>
+            <rect width="404" height="384" fill="url(#64e643ad-2176-4f86-b3d7-f2c5da3b6a6d)" />
+          </svg>
+        </div>
+         
+        <!-- Callout Content --> 
+        <div class="relative max-w-md mx-auto py-12 px-4 space-y-6 sm:max-w-3xl sm:py-16 sm:px-6 lg:max-w-none lg:p-0 lg:col-start-4 lg:col-span-6">
+          <h2 class="text-3xl font-semibold text-white" id="join-heading">Join the Year Up Global Community</h2>
+          <p class="text-lg text-white">Year Up has partnered with hundreds of organizations to provide a rescource hub that will help your organization succeed.</p>
+          <a class="block w-full py-3 px-5 text-center bg-white border border-transparent rounded-md shadow-md text-base font-medium text-blue-500 hover:bg-gray-50 sm:inline-block sm:w-auto" href="https://survey-yu-provider-readiness.pantheonsite.io/survey">Explore</a>
+        </div>
+      </div>
     </div>
-
+  </div>
+</div>
+    <div class="bg-white">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:px-8">
+    <div class="grid grid-cols-2 gap-8 md:grid-cols-6 lg:grid-cols-5">
+      <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+        <img class="h-12" src="https://tailwindui.com/img/logos/tuple-logo-gray-400.svg" alt="Tuple">
+      </div>
+      <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+        <img class="h-12" src="https://tailwindui.com/img/logos/mirage-logo-gray-400.svg" alt="Mirage">
+      </div>
+      <div class="col-span-1 flex justify-center md:col-span-2 lg:col-span-1">
+        <img class="h-12" src="https://tailwindui.com/img/logos/statickit-logo-gray-400.svg" alt="StaticKit">
+      </div>
+      <div class="col-span-1 flex justify-center md:col-span-3 lg:col-span-1">
+        <img class="h-12" src="https://tailwindui.com/img/logos/transistor-logo-gray-400.svg" alt="Transistor">
+      </div>
+      <div class="col-span-2 flex justify-center md:col-span-3 lg:col-span-1">
+        <img class="h-12" src="https://tailwindui.com/img/logos/workcation-logo-gray-400.svg" alt="Workcation">
+      </div>
     </div>
-</section>
-
-
-
-    <section class="section py-6 md:py-8 lg:py-10 xl:py-20 bg-gray-700">
-    <div class="container">
-        
-    <div class="grid grid-cols-2 sm:grid-cols-4 gap-8">
-        
-            <div class="flex justify-center">
-                <a href="https://clearleft.com/" target="_blank" rel="noopener" class="opacity-50 transition-opacity duration-200 ease-out hover:opacity-100">
-                    <img class="h-8 lg:h-10 xl:h-12" src="/logos/clearleft.svg" alt="Clearleft"></a>
-                </a>
-            </div>
-        
-            <div class="flex justify-center">
-                <a href="https://madebykind.com/" target="_blank" rel="noopener" class="opacity-50 transition-opacity duration-200 ease-out hover:opacity-100">
-                    <img class="h-8 lg:h-10 xl:h-12" src="/logos/kind.svg" alt="Kind"></a>
-                </a>
-            </div>
-        
-            <div class="flex justify-center">
-                <a href="https://www.liip.ch/" target="_blank" rel="noopener" class="opacity-50 transition-opacity duration-200 ease-out hover:opacity-100">
-                    <img class="h-8 lg:h-10 xl:h-12" src="/logos/liip.svg" alt="Liip"></a>
-                </a>
-            </div>
-        
-            <div class="flex justify-center">
-                <a href="https://slab.com/" target="_blank" rel="noopener" class="opacity-50 transition-opacity duration-200 ease-out hover:opacity-100">
-                    <img class="h-8 lg:h-10 xl:h-12" src="/logos/slab.svg" alt="Slab"></a>
-                </a>
-            </div>
-        
+  </div>
+</div>
+    <div class="bg-lightblue-200">
+  <div class="max-w-7xl mx-auto py-12 px-4 sm:px-6 lg:py-24 lg:px-8 lg:flex lg:items-center lg:justify-between">
+    <h2 class="text-3xl font-bold tracking-tight text-gray-900 md:text-4xl">
+      <span class="block">Ready to dive in?</span>
+      <span class="block text-blue-500">Get Connected with Resources and the Year Up Community</span>
+    </h2>
+    <div class="mt-8 flex lg:mt-0 lg:flex-shrink-0">
+      <div class="inline-flex rounded-md shadow">
+        <a href="#" class="inline-flex items-center justify-center px-5 py-3 border border-transparent text-base font-medium rounded-md text-white bg-blue-400 hover:bg-blue-500">
+          Get Custom Resources
+        </a>
+      </div>
     </div>
-
-    </div>
-</section>
+  </div>
+</div>
 
 </main>
 
-<footer class="bg-gray-800 py-8">
-    <div class="container">
-        <div class="md:flex md:items-center md:justify-between lg:px-8">
-            <div class="flex justify-center space-x-6 md:order-2">
-                
-                    <a href="https://twitter.com/frctl" target="_blank" rel="noopener" class="text-gray-400 hover:text-white focus:text-gray-500 transition-colors duration-200 ease-out" aria-label="Twitter" title="Twitter">
-                        <svg class="inline-block align-middle -mt-1 fill-current w-6 h-6" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#twitter" />
-</svg>
-
-                    </a>
-                
-                    <a href="https://github.com/frctl" target="_blank" rel="noopener" class="text-gray-400 hover:text-white focus:text-gray-500 transition-colors duration-200 ease-out" aria-label="GitHub" title="GitHub">
-                        <svg class="inline-block align-middle -mt-1 fill-current w-6 h-6" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#github" />
-</svg>
-
-                    </a>
-                
-                    <a href="https://discord.gg/vuRz4Yx" target="_blank" rel="noopener" class="text-gray-400 hover:text-white focus:text-gray-500 transition-colors duration-200 ease-out" aria-label="Discord" title="Discord">
-                        <svg class="inline-block align-middle -mt-1 fill-current w-6 h-6" aria-hidden="true"  focusable="false" role="img">
-  <use xlink:href="../../icons.svg#discord" />
-</svg>
-
-                    </a>
-                
-            </div>
-            <div class="mt-8 md:mt-0 md:order-1">
-                <p class="text-center text-base leading-6 text-gray-400">
-                    &copy; 2020 · MIT License
-                </p>
-            </div>
-        </div>
-    </div>
+<footer class="bg-blue-500">
+  <div class="max-w-7xl mx-auto py-14 px-4 text-center text-white">
+    <p>© 2020 Workflow, Inc. All rights reserved. Powered by <a  class="underline" href="#">YearUp.Org</a></p>
+  </div>
 </footer>
-
 
