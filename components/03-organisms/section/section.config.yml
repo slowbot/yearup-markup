@@ -11,26 +11,3 @@ variants:
       button:
         label: Take the tour
         class: w-full sm:w-auto
-  - name: right
-    context:
-      title: Tailored for your project
-      component:
-        handle: 'image--full'
-        context:
-          src: '/illustrations/work.svg'
-          width: 741
-          height: 474
-      button:
-        label: Read more
-  - name: left
-    view: 'section--right.njk'
-    context:
-      title: Roadmap
-      component:
-        handle: 'image--full'
-        context:
-          src: '/illustrations/scrum-board.svg'
-          width: 822
-          height: 580
-      button: '@section--right.button'
-      componentClass: md:order-2

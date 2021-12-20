@@ -1,0 +1,6 @@
+context:
+  component:
+    handle: image
+    context:
+      src: /pictures/map.png
+      class: w-full h-64 md:h-full md:w-auto object-cover

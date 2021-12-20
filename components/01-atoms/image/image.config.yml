@@ -1,0 +1,8 @@
+context:
+  src: '/pictures/map.png'
+variants:
+  - name: default
+    label: Responsive
+  - name: full
+    context:
+      class: w-full
