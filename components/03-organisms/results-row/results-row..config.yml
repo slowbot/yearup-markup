@@ -1,0 +1,13 @@
+context:
+  title: Key features
+  body: Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta optio placeat quisquam minus rem omnis, aliquam consequatur at deleniti, laudantium fugiat ratione? Minima voluptatem, aliquam quod dolorem necessitatibus, blanditiis, itaque deleniti.
+variants:
+  - name: default
+    label: Centered
+    context:
+      component:
+        handle: 'features-grid'
+        context: {}
+      button:
+        label: Take the tour
+        class: w-full sm:w-auto
