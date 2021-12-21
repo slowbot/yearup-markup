@@ -184,7 +184,9 @@
             <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent&quot;</span>&gt;</span>
                 <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lg:max-w-3xl lg:max-w-md lg:mx-auto lg:px-6&quot;</span>&gt;</span>
                     <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex align-center justify-center aspect-w-10 aspect-h-6 lg:rounded-3xl shadow-2xl bg-gold-400 py-12 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1&quot;</span>&gt;</span>
-                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;object-cover object-center&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/pictures/map.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+
+                        <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;../../pictures/map.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span> <span class="hljs-attr">loading</span>=<span class="hljs-string">&quot;lazy&quot;</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;image w-full h-64 md:h-full md:w-auto object-cover&quot;</span> /&gt;</span>
+
                     <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
                 <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
             <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -235,7 +237,9 @@
       <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;relative z-10 lg:col-start-1 lg:row-start-1 lg:col-span-4 lg:py-16 lg:bg-transparent&quot;</span>&gt;</span>
         <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;lg:max-w-3xl lg:max-w-md lg:mx-auto lg:px-6&quot;</span>&gt;</span>
           <span class="hljs-tag">&lt;<span class="hljs-name">div</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;flex align-center justify-center aspect-w-10 aspect-h-6 lg:rounded-3xl shadow-2xl bg-gold-400 py-12 sm:aspect-w-2 sm:aspect-h-1 lg:aspect-w-1&quot;</span>&gt;</span>
-            <span class="hljs-tag">&lt;<span class="hljs-name">img</span> <span class="hljs-attr">class</span>=<span class="hljs-string">&quot;object-cover object-center&quot;</span> <span class="hljs-attr">src</span>=<span class="hljs-string">&quot;/pictures/map.png&quot;</span> <span class="hljs-attr">alt</span>=<span class="hljs-string">&quot;&quot;</span>&gt;</span>
+            </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">if</span></span> component %}</span><span class="xml">
+              </span><span class="hljs-template-tag">{% <span class="hljs-name">render</span> &#x27;@&#x27; + component.handle, component.context|<span class="hljs-name">default</span>({}), true %}</span><span class="xml">
+            </span><span class="hljs-template-tag">{% <span class="hljs-name"><span class="hljs-name">endif</span></span> %}</span><span class="xml">
           <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
         <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
       <span class="hljs-tag">&lt;/<span class="hljs-name">div</span>&gt;</span>
@@ -280,7 +284,15 @@
     <code class="Code Code--lang-json hljs">
         
             
-            <pre><span class="hljs-comment">/* No context defined. */</span></pre>
+            <pre>{
+  <span class="hljs-attr">&quot;component&quot;</span>: {
+    <span class="hljs-attr">&quot;handle&quot;</span>: <span class="hljs-string">&quot;image&quot;</span>,
+    <span class="hljs-attr">&quot;context&quot;</span>: {
+      <span class="hljs-attr">&quot;src&quot;</span>: <span class="hljs-string">&quot;/pictures/map.png&quot;</span>,
+      <span class="hljs-attr">&quot;class&quot;</span>: <span class="hljs-string">&quot;w-full h-64 md:h-full md:w-auto object-cover&quot;</span>
+    }
+  }
+}</pre>
             
         
     </code>
@@ -433,6 +445,32 @@
         </li>
         
     
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image--default.html" data-role="tree-link" data-pjax data-handle="image">
+                <span>Image</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
 
     </ul>
 </div>
@@ -487,6 +525,58 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="card-grid.html" data-role="tree-link" data-pjax data-handle="card-grid">
+                <span>Card Grid</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="contact.html" data-role="tree-link" data-pjax data-handle="contact">
+                <span>Contact</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="footer.html" data-role="tree-link" data-pjax data-handle="footer">
                 <span>Footer</span>
                 
@@ -513,8 +603,60 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="header.html" data-role="tree-link" data-pjax data-handle="header">
+                <span>Header</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="hero--default.html" data-role="tree-link" data-pjax data-handle="hero">
                 <span>Hero</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="intro.html" data-role="tree-link" data-pjax data-handle="intro">
+                <span>Intro</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -591,8 +733,86 @@
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="section--default.html" data-role="tree-link" data-pjax data-handle="section">
-                <span>Section</span>
+            <a class="Tree-entityLink" href="results-row.html" data-role="tree-link" data-pjax data-handle="results-row">
+                <span>Results Row</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="steps.html" data-role="tree-link" data-pjax data-handle="steps">
+                <span>Steps</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="survey.html" data-role="tree-link" data-pjax data-handle="survey">
+                <span>Survey</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="team.html" data-role="tree-link" data-pjax data-handle="team">
+                <span>Team</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -642,6 +862,84 @@
         <li class="Tree-item Tree-entity" data-role="item">
             <a class="Tree-entityLink" href="home.html" data-role="tree-link" data-pjax data-handle="home">
                 <span>Home</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="welcome.html" data-role="tree-link" data-pjax data-handle="welcome">
+                <span>Welcome</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="form.html" data-role="tree-link" data-pjax data-handle="form">
+                <span>Form</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="results.html" data-role="tree-link" data-pjax data-handle="results">
+                <span>Results</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -777,8 +1075,8 @@
                     <dt class="Tree-asideTerm">Built on:</dt>
                     <dd class="Tree-asideDescription">
                         
-                            <time datetime="2021-12-20T18:29:49.059Z">
-                                12/20/2021
+                            <time datetime="2021-12-21T18:05:46.491Z">
+                                12/21/2021
                             </time>
                         
                     </dd>
@@ -873,13 +1171,62 @@
         </li>
         
     
+
+    </ul>
+</div>
+
+            </div>
+        
+    
+        
+            
+            <div class="Navigation-group" data-role="variant-group" data-component="image">
+                
+<div class="Tree" data-behaviour="tree" id="tree-image-variants">
+    <div class="Tree-header">
+        <h3 class="Tree-title">Image Variants</h3>
+
+        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
+            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
+
+        </button>
+    </div>
+    <ul class="Tree-items Tree-depth-1">
+        
+    
         
         
         
         
         <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="button--link.html" data-role="tree-link" data-pjax data-handle="button">
-                <span>Link</span>
+            <a class="Tree-entityLink" href="image--default.html" data-role="tree-link" data-pjax data-handle="image">
+                <span>Responsive</span>
+                
+
+<div class="Status Status--unlabelled">
+
+<div class="Status-dots">
+
+
+<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
+
+
+</div>
+
+</div>
+
+
+            </a>
+        </li>
+        
+    
+        
+        
+        
+        
+        <li class="Tree-item Tree-entity" data-role="item">
+            <a class="Tree-entityLink" href="image--full.html" data-role="tree-link" data-pjax data-handle="image">
+                <span>Full</span>
                 
 
 <div class="Status Status--unlabelled">
@@ -984,6 +1331,12 @@
         
     
         
+    
+        
+    
+        
+    
+        
             
             <div class="Navigation-group" data-role="variant-group" data-component="hero">
                 
@@ -1063,104 +1416,19 @@
         
     
         
-            
-            <div class="Navigation-group" data-role="variant-group" data-component="section">
-                
-<div class="Tree" data-behaviour="tree" id="tree-section-variants">
-    <div class="Tree-header">
-        <h3 class="Tree-title">Section Variants</h3>
-
-        <button type="button" data-behaviour="collapse-tree" class="Tree-collapse" title="Collapse tree" aria-label="Collapse tree" hidden>
-            <svg width="24" height="24" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg"><path d="m9 11c-.6 0-1 .4-1 1s.4 1 1 1h6c.6 0 1-.4 1-1s-.4-1-1-1z"/><path d="m19 21h-14c-1.1 0-2-.9-2-2v-14c0-1.1.9-2 2-2h14c1.1 0 2 .9 2 2v14c0 1.1-.9 2-2 2zm-14-16v14h14v-14z"/></svg>
-
-        </button>
-    </div>
-    <ul class="Tree-items Tree-depth-1">
+    
         
     
         
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="section--default.html" data-role="tree-link" data-pjax data-handle="section">
-                <span>Centered</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
+    
         
     
         
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="section--right.html" data-role="tree-link" data-pjax data-handle="section">
-                <span>Right</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
+    
         
     
         
-        
-        
-        
-        <li class="Tree-item Tree-entity" data-role="item">
-            <a class="Tree-entityLink" href="section--left.html" data-role="tree-link" data-pjax data-handle="section">
-                <span>Left</span>
-                
-
-<div class="Status Status--unlabelled">
-
-<div class="Status-dots">
-
-
-<span class="Status-dot" style="border-color: #29CC29;" title="Ready"></span>
-
-
-</div>
-
-</div>
-
-
-            </a>
-        </li>
-        
     
-
-    </ul>
-</div>
-
-            </div>
         
     
         

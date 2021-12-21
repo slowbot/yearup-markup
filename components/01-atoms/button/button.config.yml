@@ -5,6 +5,3 @@ variants:
     label: Primary
   - name: secondary
     order: 2
-  - name: link
-    context:
-      href: '#'
