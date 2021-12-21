@@ -73,5 +73,7 @@ module.exports = {
     variants: {
         translate: ['responsive', 'hover', 'focus', 'group-hover'],
     },
-    plugins: [],
+    plugins: [
+      require('@tailwindcss/forms'),
+    ],
 };
