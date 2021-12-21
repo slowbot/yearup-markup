@@ -1,5 +1,8 @@
 context:
-  button:
+  buttons:
     primary:
       href: '#'
-      label: Get started
+      label: Next
+    secondary:
+      href: '#'
+      label: Previous

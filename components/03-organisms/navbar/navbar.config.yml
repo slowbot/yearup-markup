@@ -1,3 +1,7 @@
 context:
   title: Product Name
+  button:
+    primary:
+      href: '#'
+      label: Sign Up
   

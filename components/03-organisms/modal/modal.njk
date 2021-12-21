@@ -91,9 +91,9 @@
       </div>
 
       <div class="mt-5 sm:mt-4 sm:pl-4 sm:flex">
-        <button type="button" class="inline-flex justify-center w-full rounded-md border border-transparent shadow-sm px-4 py-2 bg-blue-400 text-base font-medium text-white hover:bg-blue-500 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-blue-500 sm:w-auto sm:text-sm">
-          Complete Profile
-        </button>
+        {% if button.primary %}
+          {% render '@button--small', button.primary, true %}
+        {% endif %}
       </div>
     </div>
   </div>

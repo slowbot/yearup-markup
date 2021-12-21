@@ -5,3 +5,5 @@ variants:
     label: Primary
   - name: secondary
     order: 2
+  - name: small
+  - name: large

@@ -1,0 +1,5 @@
+context:
+  button:
+    primary:
+      href: '#'
+      label: Complete Profile
